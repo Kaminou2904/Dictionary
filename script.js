@@ -41,7 +41,7 @@ function searchWord() {
 }
 
 function speakWord() {
-  let utterance = new SpeechSynthesisUtterance(`${searchInput.value}`);
+  let utterance = new SpeechSynthesisUtterance(`${word.innerHTML}`);
   speechSynthesis.speak(utterance);
 }
 
